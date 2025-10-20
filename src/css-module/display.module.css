@@ -19,13 +19,13 @@
 
 @media only screen and (max-width: 972px) {
   .displayDiv {
-    min-height: calc(100% - 850px);
+    min-height: calc(100% - 270px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
   }
   .search {
     width: 90%;
+    position: sticky;
   }
 }
