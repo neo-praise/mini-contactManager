@@ -1,0 +1,113 @@
+.formDiv {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.text {
+  height: 35px;
+  color: dodgerblue;
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.inner {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding-top: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px;
+}
+.inputBox {
+  width: 450px;
+  height: 30px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 13px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.inputBox:focus {
+  border: 1px solid dodgerblue;
+}
+.contactType {
+  width: 450px;
+  height: 20px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+.radioBtns {
+  width: 450px;
+  height: 25px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: 13px;
+  gap: 7px;
+}
+.submit {
+  width: 450px;
+  height: 30px;
+  margin-top: 10px;
+  background: dodgerblue;
+  outline: none;
+  border: 1px solid dodgerblue;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+.submit:hover {
+  text-decoration: underline;
+}
+.clear {
+  width: 450px;
+  height: 30px;
+  margin-top: 10px;
+  background: #eee;
+  outline: none;
+  border: 1px solid #eee;
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clear:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 972px) {
+  .formDiv {
+    height: 850px;
+  }
+  form {
+    align-items: center;
+    margin-top: -15px;
+  }
+  .inputBox,
+  .contactType,
+  .radioBtns,
+  .submit,
+  .clear {
+    width: 90%;
+    margin-top: 5px;
+  }
+  .text {
+    justify-content: center;
+  }
+}
