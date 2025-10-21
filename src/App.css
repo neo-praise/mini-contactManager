@@ -13,6 +13,7 @@
   height: calc(100vh - 50px);
   display: flex;
   background-image: url("./Images/bg.jpg");
+  background-size: cover;
 }
 .fixed {
   width: 40px;
