@@ -43,7 +43,9 @@ export default function Form({
   return (
     <div className={Styles.formDiv}>
       <div className={Styles.text}>
-        <div className={Styles.inner}>Edit Contact</div>
+        <div className={Styles.inner}>
+          {editID === null ? `Add Contact` : `Edit Contact`}
+        </div>
       </div>
       <form>
         <input
