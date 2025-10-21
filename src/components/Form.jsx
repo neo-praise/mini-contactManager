@@ -11,6 +11,7 @@ export default function Form({
   function handleClick(e) {
     e.preventDefault();
     setContact({ name: "", email: "", phone: "", contactType: "" });
+    setEditID(null);
   }
 
   function submitForm(e) {
@@ -96,7 +97,7 @@ export default function Form({
           className={Styles.submit}
           onClick={(e) => submitForm(e)}
         >
-          Submit Contact
+          {editID === null ? `Add Contact` : `Update Contact`}
         </button>
         <button className={Styles.clear} onClick={(e) => handleClick(e)}>
           Clear

@@ -12,6 +12,7 @@
   width: 100%;
   height: calc(100vh - 50px);
   display: flex;
+  background-image: url("./Images/bg.jpg");
 }
 .fixed {
   width: 30px;
@@ -33,6 +34,7 @@
 @media only screen and (max-width: 972px) {
   .bodyContent {
     flex-direction: column;
+    background-image: url("./Images/bg.jpg");
   }
   .fixed {
     display: block;

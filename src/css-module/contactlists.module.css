@@ -14,7 +14,7 @@
   padding: 10px;
 }
 .name {
-  color: dodgerblue;
+  color: #4267b2;
   font-size: 14px;
   font-weight: bold;
 }
@@ -33,7 +33,7 @@
 .personal {
   width: 100px;
   height: 20px;
-  background: dodgerblue;
+  background: #4267b2;
   display: flex;
   justify-content: center;
   align-items: center;
