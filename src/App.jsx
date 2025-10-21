@@ -47,9 +47,14 @@ function App() {
   return (
     <div className="mainContent">
       <Header />
-      <div className="fixed" onClick={handleClick}>
-        <IoMdOpen />
-      </div>
+      {contacts.length > 0 ? (
+        <div className="fixed" onClick={handleClick}>
+          <IoMdOpen />
+        </div>
+      ) : (
+        ""
+      )}
+
       <div className="bodyContent">
         {show === true ? (
           <Form
