@@ -71,7 +71,7 @@ form {
   color: white;
   font-size: 14px;
 }
-.submit:hover {
+.submit:active {
   text-decoration: underline;
 }
 .clear {
@@ -88,14 +88,19 @@ form {
   justify-content: center;
   align-items: center;
 }
-.clear:hover {
+.clear:active {
   text-decoration: underline;
+}
+hr {
+  border: 1px solid #ddd;
+  width: 100%;
+  margin-top: 5px;
+  display: none;
 }
 
 @media only screen and (max-width: 972px) {
   .formDiv {
     height: 270px;
-    border-bottom: 2px solid #eee;
   }
   form {
     align-items: center;
@@ -111,5 +116,8 @@ form {
   }
   .text {
     justify-content: center;
+  }
+  hr {
+    display: block;
   }
 }

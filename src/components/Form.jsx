@@ -102,6 +102,7 @@ export default function Form({
         <button className={Styles.clear} onClick={(e) => handleClick(e)}>
           Clear
         </button>
+        {contacts.length > 0 ? <hr /> : ""}
       </form>
     </div>
   );
